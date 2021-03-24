@@ -1,0 +1,39 @@
+{% extends "_layout.html" %}
+<!--criamos um bloco de conteúdo a ser interpretado pelo python-->
+{% block conteudo %}
+    <br>
+    <div id="accordion">
+        {% for receita in receitas  %}
+            <div class="card">
+                <div class="card-header" id='heading{{ receita.id }}'>
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ receita.id }}" aria-expanded="true" aria-controls="collapse{{ receita.id }}">
+                        {{ receita.nome }}
+                      </button>
+                    </h5>
+                </div>
+                <div id="collapse{{ receita.id }}" class="collapse show" aria-labelledby="heading{{ receita.id }}" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row col-12">Ingredientes:</div>
+                        {% for ingrediente in receita.lIngredientes  %}
+                            <div class="row col-12">{{ingrediente.nome}}</div>
+                        {% endfor %}
+                    </div>
+                    <br>
+                    <div class="card-body">
+                        <div class="row col-12">Passo a Passo:</div>
+                        {% for passo in receita.lPassos  %}
+                            <div class="row col-12">{{passo}}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}
+
+
+
+<!--encerramos o bloco de código a ser interpretado pelo python-->
