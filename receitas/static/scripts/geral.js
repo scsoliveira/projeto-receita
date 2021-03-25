@@ -91,3 +91,45 @@ function AdicionarCampoIngrediente(){
     campo.placeholder = "Ex: Sal";
     dvIngredientes.appendChild(campo);
 }
+
+function LimparCampos(){
+  document.getElementById('txtQtd').value='';
+  document.getElementById('txtNome').value='';
+
+  var textarea = document.getElementById('txtListaI')
+  var textarea2 = document.getElementById('txtListaP')
+
+  textarea.value = "";
+  textarea2.value = "";
+}
+
+function AdicionarIngredienteReceita(){
+  var textarea = document.getElementById('txtListaI');
+  console.log(textarea);
+  if(textarea.value == "")
+    var txt = $('#txtQtd').val() + " - " + $('#slcIngrediente').val();
+  else
+    var txt = "\n"+$('#txtQtd').val() + " - " + $('#slcIngrediente').val();
+
+  document.getElementById('txtQtd').value='';
+  
+  textarea.value += txt;
+
+}
+
+function SalvarReceita(){
+  swal({
+      title:"Salvo!",
+      text: "Nova receita registrada!",
+      icon: "success",
+      closeOnClickOutside: false,
+      buttons:{
+          sim:{
+              text:"Confirmar",
+              value: true
+          }
+      },
+  }).then(value => {
+    location.reload();
+  })
+}
