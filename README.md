@@ -1,7 +1,4 @@
-# projeto-receita
-Projeto da matéria de Laboratório de Engenharia de Software - FATEC
-
-# Projeto Web L-ES II - Receitas Online
+# Projeto Web Laboratório de Engenharia de Software - FATEC - Receitas Online
 
 Aplicação web em Flask para cadastros de ingredientes e receitas
 
