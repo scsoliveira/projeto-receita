@@ -35,6 +35,4 @@ cd .\receitas\
 python app.py
 ```
 ## Vídeo Demonstrativo/Explicativo
-```
 [Video](https://youtu.be/U-BSwrBbVGg)
-```
