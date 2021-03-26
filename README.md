@@ -14,7 +14,7 @@ cd receitas
 Clonado, dentro da pasta do projeto, crie e inicialize o ambiente virtual:
 
 ```bash
-virtualenv venv
+python -m virtualenv venv
 .\venv\scripts\activate  
 ```
 
