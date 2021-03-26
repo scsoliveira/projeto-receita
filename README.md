@@ -36,5 +36,5 @@ python app.py
 ```
 ## Vídeo Demonstrativo/Explicativo
 ```
-https://youtu.be/U-BSwrBbVGg
+[Video](https://youtu.be/U-BSwrBbVGg)
 ```
