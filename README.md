@@ -8,7 +8,7 @@ Primeiro passo é realizar a clonagem do repositório:
 
 ```bash
 git clone https://github.com/scsoliveira/projeto-receita.git
-cd receitas
+cd projeto-receita
 ```
 
 Clonado, dentro da pasta do projeto, crie e inicialize o ambiente virtual:
