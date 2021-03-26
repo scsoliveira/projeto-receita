@@ -2,7 +2,7 @@
 
 Aplicação web em Flask para cadastros de ingredientes e receitas
 
-## Preparando Ambienete
+## Preparando Ambiente
 
 Primeiro passo é realizar a clonagem do repositório:
 
