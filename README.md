@@ -1,11 +1,8 @@
-# projeto-receita
-Projeto da matéria de Laboratório de Engenharia de Software - FATEC
-
-# Projeto Web L-ES II - Receitas Online
+# Projeto Web Laboratório de Engenharia de Software - FATEC - Receitas Online
 
 Aplicação web em Flask para cadastros de ingredientes e receitas
 
-## Preparando Ambienete
+## Preparando Ambiente
 
 Primeiro passo é realizar a clonagem do repositório:
 
@@ -17,7 +14,7 @@ cd receitas
 Clonado, dentro da pasta do projeto, crie e inicialize o ambiente virtual:
 
 ```bash
-virtualenv venv
+python -m virtualenv venv
 .\venv\scripts\activate  
 ```
 
