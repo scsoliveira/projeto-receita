@@ -20,7 +20,7 @@
                         <select class="form-control" id="slcIngrediente">
                             <option value="0"> Selecione </option>
                             {% for item in ingredientes  %}
-                                <option value="{{item.nome}}"> {{item.nome}} </option>
+                                <option value="{{item.id_ingrediente}}"> {{item.nome}} </option>
                             {% endfor %}
                         </select>
                     </div>
@@ -39,9 +39,10 @@
                     <div class="col-6 mb-3">
                         <label for="txtListaI">Ingredientes:</label>
                         <textarea readonly class="form-control" style="height: 250px;" type="text" id="txtListaI"></textarea>
+                        <textarea readonly class="form-control" hidden style="height: 250px;" type="text" id="txtListaI2"></textarea>
                     </div>
                     <div class="col-6 mb-3">
-                        <label for="txtListaP">Passo a Passo: (Separado por ponto e virgula)</label>
+                        <label for="txtListaP">Passo a Passo:</label>
                         <textarea class="form-control" placeholder="Ex: Assar;" type="text" style="height: 250px;" id="txtListaP"></textarea>
                     </div>
                 </div>
@@ -57,26 +58,25 @@
     <div id="accordion">
         {% for receita in receitas  %}
             <div class="card">
-                <div class="card-header" id='heading{{ receita.id }}'>
+                <div class="card-header" id='heading{{ receita.id_receita }}'>
                     <h5 class="mb-0">
-                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ receita.id }}" aria-expanded="true" aria-controls="collapse{{ receita.id }}">
+                      <button style="font-weight: bold;" class="btn btn-link" data-toggle="collapse" data-target="#collapse{{ receita.id_receita }}" aria-expanded="true" aria-controls="collapse{{ receita.id_receita }}">
                         {{ receita.nome }}
                       </button>
+                      <a tabindex="0" onclick="ExcluirReceita({{ receita.id_receita }})" title="Excluir" style="font-size: 30px; cursor: pointer; float: right;"><span><i class="fa fa-trash"></i></span></a>
                     </h5>
                 </div>
-                <div id="collapse{{ receita.id }}" class="collapse" aria-labelledby="heading{{ receita.id }}" data-parent="#accordion">
+                <div id="collapse{{ receita.id_receita }}" class="collapse" aria-labelledby="heading{{ receita.id_receita }}" data-parent="#accordion">
                     <div class="card-body">
                         <div class="row col-12">Ingredientes:</div>
-                        {% for ingrediente in receita.lIngredientes  %}
-                            <div class="row col-12">{{ingrediente.qtd}} - {{ingrediente.nome}}</div>
+                        {% for ingrediente in receita.ingredientes  %}
+                            <div class="row col-12">{{ingrediente.qtd}} - {{ingrediente.ingredientes.nome}}</div>
                         {% endfor %}
                     </div>
                     <br>
                     <div class="card-body">
                         <div class="row col-12">Passo a Passo:</div>
-                        {% for passo in receita.lPassos  %}
-                            <div class="row col-12">{{passo}}</div>
-                        {% endfor %}
+                            <div class="row col-12">{{receita.passo_a_passo}}</div>
                     </div>
                 </div>
             </div>
