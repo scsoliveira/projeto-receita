@@ -8,7 +8,7 @@ Primeiro passo é realizar a clonagem do repositório:
 
 ```bash
 git clone https://github.com/scsoliveira/projeto-receita.git
-cd receitas
+cd projeto-receita
 ```
 
 Clonado, dentro da pasta do projeto, crie e inicialize o ambiente virtual:
@@ -34,3 +34,5 @@ Para executar o projeto em ambiente de desenvolvimento, entre no diretório 'rec
 cd .\receitas\    
 python app.py
 ```
+## Vídeo Demonstrativo/Explicativo
+[Video](https://youtu.be/U-BSwrBbVGg)
