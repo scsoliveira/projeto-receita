@@ -21,7 +21,7 @@ python -m virtualenv venv
 Após a criação e inicialização do ambiente virtual instale as dependências do projeto:
 
 ```
-pip install -e .
+pip install -r requirements.txt 
 ```
 
 ## Para Executar
@@ -35,4 +35,28 @@ cd .\receitas\
 python app.py
 ```
 ## Vídeo Demonstrativo/Explicativo
-[Video](https://youtu.be/U-BSwrBbVGg)
+[Video 1 Entrega](https://youtu.be/U-BSwrBbVGg)
+
+## Preparando Ambiente Segunda Entrega
+
+```
+git pull origin main
+```
+```
+venv/Scripts/activate
+```
+Atualização das novas dependências
+
+```
+pip install -r requirements.txt
+```
+
+Criar connection e schema no mysql workbench 
+- Schema = l-es
+- user = root
+- senha = oh6zlppn5
+
+## Vídeo Demonstrativo/Explicativo
+[Video 2 Entrega](https://youtu.be/P93GW4lyVAw)
+
+**É provável que seja necessária a trocar a senha da conexão no app.py**
