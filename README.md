@@ -56,7 +56,7 @@ Criar connection e schema no mysql workbench
 - user = root
 - senha = oh6zlppn5
 
+**É provável que seja necessária a trocar a senha da conexão no app.py**
+
 ## Vídeo Demonstrativo/Explicativo
 [Video 2 Entrega](https://youtu.be/P93GW4lyVAw)
-
-**É provável que seja necessária a trocar a senha da conexão no app.py**
