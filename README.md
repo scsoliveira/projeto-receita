@@ -39,8 +39,9 @@ python app.py
 
 ## Preparando Ambiente Segunda Entrega
 
+Atualizando o repositorio local
 ```
-git pull origin main
+git pull origin master
 ```
 ```
 venv/Scripts/activate
@@ -56,7 +57,7 @@ Criar connection e schema no mysql workbench
 - user = root
 - senha = oh6zlppn5
 
-**É provável que seja necessária a trocar a senha da conexão no app.py**
+**É provável que seja necessária trocar a senha da conexão no app.py**
 
 ## Vídeo Demonstrativo/Explicativo
 [Video 2 Entrega](https://youtu.be/P93GW4lyVAw)
