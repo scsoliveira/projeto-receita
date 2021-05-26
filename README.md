@@ -54,8 +54,6 @@ pip install -r requirements.txt
 
 Criar connection e schema no mysql workbench 
 - Schema = l-es
-- user = root
-- senha = oh6zlppn5
 
 **É provável que seja necessária trocar a senha da conexão no app.py**
 
